@@ -6,6 +6,7 @@ ruby '2.6.5'
 gem 'rails', '~> 6.0.0'
 gem 'pg'
 gem 'devise'
+gem 'slim'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5'
 gem 'webpacker', '~> 4.0'
@@ -28,6 +29,8 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem "webmock", require: false
+  gem 'rspec-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
