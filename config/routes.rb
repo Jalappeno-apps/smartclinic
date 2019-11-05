@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	root "dashboard#index"
+  root "homepage#index"
 
   devise_for :users, path: 'admin', path_names: { 
   	sign_in: 'login',
@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   	get 'admin', to: 'devise/sessions#new'
   end
 
-	resources :dashboard, only: :index
+  resources :dashboard, only: :index
+  resources :doctors
 end
