@@ -1,13 +1,14 @@
 footer
   .row
-    .col-md-6.text-center
+    .col-lg-6.text-center
       .embed-responsive.embed-responsive-16by9
         iframe.embed-responsive-item src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.317942933431!2d20.98555141599367!3d52.21944116621176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecdbc1f5b8287%3A0x8d1e36ad170974b5!2sSmart%20Life%20Clinic!5e0!3m2!1sen!2sin!4v1577910020484!5m2!1sen!2sin" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="true"
-    .col-md-6
-      = image_tag('logo.svg', id: "footer-logo", class: "img-fluid") 
+    .col-sm-12.col-lg-6
+      span.text-center
+        = image_tag('logo.svg', id: "footer-logo", class: "img-fluid") 
 
       .row
-        .col-md-6.footer-points
+        .col-sm-6.footer-points
           h4 Gdzie nas znaleźc?
           p.footer-text 
             | ul. Marszałkowska 26/25 
@@ -18,7 +19,7 @@ footer
             br
             | Wejście od tyłu budynku
           
-        .col-md-6.footer-points.pull-left
+        .col-sm-6.footer-points.pull-left
           h4 Skontaktuj się
           p.footer-text
             a href="mailto:info@smartlifeclinic.pl"
@@ -26,7 +27,7 @@ footer
             br
             | Recepcja: 
             a href="tel:+48506166303"
-        .col-md-6.footer-points
+        .col-sm-6.footer-points
           h4 Jesteśmy otwarci:
           p.footer-text
             | pn-pt: 17:00 - 21:30 
@@ -37,5 +38,5 @@ footer
             | Możliwe wizyty indywidualne 
             br
             | w dodatkowych godzinach.
-        .col-md-6.footer-points
+        .col-sm-6.footer-points
           h4 Social media icons

@@ -608,7 +608,7 @@ footer {
   line-height: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   footer {
     left: initial;
     margin-left: initial;
@@ -649,6 +649,15 @@ footer {
   transform: translate(0px, -15px);
 } 
 
+@media only screen and (max-width: 768px) {
+  .box {
+    min-height: 170px;
+  }
+
+  #header-mid-text {
+    margin-top: 0px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .text-muted {
     text-align: center;
