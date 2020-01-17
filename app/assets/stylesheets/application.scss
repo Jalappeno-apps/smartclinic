@@ -1,21 +1,24 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
-/*.dropdown-toggle::after {
-  display: none;
-}*/
-
 body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(180deg, #F4E7DF 0%, #FFFFFF 29.54%, #FFFFFF 100%);
   overflow-x: hidden;
 }
 
-.text-red {
+.text-dark-orange {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   color: #EB7839 !important;
+}
+
+.text-red {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #BA2020 !important;
 }
 
 .text-blue {
@@ -40,9 +43,18 @@ body {
   font-weight: 600;
 }
 
-.btn-red {
+.btn-dark-orange {
   background: #EB7839;
   border: 0.857143px solid #EB7839;
+  border-radius: 5.14286px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.btn-red {
+  background: #BA2020;
+  border: 0.857143px solid #BA2020;
   border-radius: 5.14286px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -159,7 +171,9 @@ header {
 .header-main {
   padding-top: 50px;
 }
-
+.header-heading {
+  margin-top: 3%;
+}
 @media only screen and (max-width: 600px) {
   .header-button {
     text-align: center;

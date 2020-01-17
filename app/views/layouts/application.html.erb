@@ -18,5 +18,16 @@
     <%= yield %>
     
     <%= render 'layouts/footer' %>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+    var typed4 = new Typed('#typed', {
+      strings: ['psychiczne', 'fizyczne', 'specjaliści'],
+      typeSpeed: 50,
+      backSpeed: 40,
+      bindInputFocusEvents: true,
+      loop: true,
+      smartBackspace: true // Default value
+    });
+  </script>
   </body>
 </html>
