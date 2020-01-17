@@ -1,7 +1,8 @@
-h1 style="text-align: center" = doctor.name.capitalize
+- if doctor
+  h1 style="text-align: center" = doctor.name&.to_str&.capitalize
 
-- if doctor.specializations.any?
-	b Specializations
-	ul
-	- doctor.specializations.each do |sp|
-	  li = sp.name
+  - if doctor.specializations.any?
+  	b Specializations
+  	ul
+  	- doctor.specializations.each do |sp|
+  	  li = sp.name

@@ -15,6 +15,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rails-i18n', '~> 6.0.0' 
 gem 'http_accept_language', "~> 2.1.1"
+gem "mini_magick"
+gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

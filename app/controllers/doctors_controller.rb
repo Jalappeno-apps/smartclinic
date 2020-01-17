@@ -3,16 +3,6 @@ class DoctorsController < ApplicationController
 
   def index; end
 
-  def show; end
-  
-  def create
-  	Doctor.create!(doctor_params) unless Doctor.all.where(name: doctor_params[:name]).any?
-  end
-
-  def delete
-  	Doctor.find(doctor_params[:id]).destroy!
-  end
-
 private
   
   def doctors

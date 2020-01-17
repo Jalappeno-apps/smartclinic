@@ -11,5 +11,12 @@ Rails.application.routes.draw do
   end
 
   resources :dashboard, only: :index
-  resources :doctors
+  resources :doctors, only: [:index, :show]
+
+  namespace :dashboard do
+    resources :doctors, only: [:index, :create, :show]
+    resources :blogs, only: :index
+  end
+
+  get 'blog/:blog_name_slug', to: 'blogs#show'
 end

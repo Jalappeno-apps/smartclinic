@@ -20,4 +20,8 @@ class ApplicationController < ActionController::Base
     return i18n_from_cookie if i18n_from_cookie.in?(I18n.available_locales)
     return http_accept_language.compatible_language_from(I18n.available_locales)
   end
+
+  def after_sign_in_path_for(resource)
+    stored_location_for(resource) || dashboard_index_path
+  end
 end
