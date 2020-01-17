@@ -278,10 +278,14 @@ header {
 
 /* =========== columns section =========*/
 #sexual {
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 @media only screen and (max-width: 500px) {
+  #sexual {
+    margin-top: 20%;
+  }
+
   #services {
     margin-top: 20px;
   }
@@ -340,7 +344,7 @@ ul.points-red {
 
 /* ============ psychology ================ */
 #psychology {
-  margin-top: 20%;
+  margin-top: 10%;
   margin-bottom: 10%;
 }
 
@@ -372,6 +376,10 @@ ul.points-blue {
 }
 
 @media only screen and (max-width: 700px) {
+  #psychology {
+    margin-top: 20%;
+  }
+
   .overlay-blue-logo {
     display: none;
   }
@@ -402,10 +410,16 @@ ul.points-blue {
 /* ============ physical begins ============*/
 
 #physical {
-  margin-top: 20%;
+  margin-top: 10%;
   margin-bottom: 10%;
 }
 
+@media only screen and (max-width: 600px) {
+  #physical {
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+}
 /* ============ physical ends ============*/
 
 ul.points-orange {
