@@ -540,7 +540,6 @@ footer {
   background-color: #F9F6F4;
   padding: 85px;
 
-
   bottom: 0;
 }
 
@@ -572,6 +571,15 @@ footer {
 
 @media only screen and (max-width: 600px) {
   footer {
+    left: initial;
+    margin-left: initial;
+    margin-right: initial;
+    max-width: initial;
+    position: initial;
+    right: initial;
+    width: initial;
+    min-width: initial;
+
     display: flex;
     justify-content: center;
     align-content: center;
