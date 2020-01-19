@@ -202,7 +202,11 @@ header {
 }
 
 .header-images {
+  padding: 0px !important;
   min-height: 467px;
+  background-image: image-url("home_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-button {
@@ -276,7 +280,7 @@ header {
 
 /* ============== Services ================ */
 #services {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 #services h3 {
