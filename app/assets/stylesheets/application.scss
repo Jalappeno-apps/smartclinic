@@ -203,9 +203,6 @@ header {
 
 .header-images {
   min-height: 467px;
-  background-image: image-url("home_bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .header-button {
@@ -279,7 +276,7 @@ header {
 
 /* ============== Services ================ */
 #services {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 #services h3 {
