@@ -1,19 +1,23 @@
 <header class="header-main">
   <div class="container"> 
     <div class="row">
-
       <div class="col-md-5 align-self-center">
         <h1 class="header-heading"> 
-          Dbamy o Twoje <br> zdrowie <span id="typed" class="underline"></span>
+            <%= t('header.title') %> 
+            <% if locale.to_s == 'en' %> 
+              <br> 
+              <span id="typed" class="underline"></span>
+            <% else %>
+              <span id="typed" class="underline"></span> 
+            <% end %>
         </h1>
 
         <p id="header-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris.
+          <%= t("header.header_text") %>
         </p>
         <div class="header-button"> 
-          <button class="btn btn-red my-2 my-sm-0" type="submit">Umów wizytę</button>
+          <button class="btn btn-brown my-2 my-sm-0" type="submit">
+            <%= t('header.book_now') %></button>
         </div>
       </div>
 
@@ -24,9 +28,12 @@
 
       <div class="col-md-12" id="header-mid-text">
         <div class="overlay-text text-center"> 
-          <h1 class="header-heading mobile-center"> Medycyna otwarta na potrzeby współczesności</h1>
+          <h1 class="header-heading mobile-center"> 
+            <%= t('modern_med.title') %></h1>
           <div class="text-center" id="header-mid">
-            <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo morbi tempor tristique est augue a mauris amet. Ipsum justo id ut ornare fusce massa quis sed mauris. Suscipit vel, id cras vitae eros nunc nam vitae. In fringilla volutpat sollicitudin purus nulla lectus at leo. Quis turpis tellus imperdiet leo tellus eget. Volutpat cras tortor libero velit.</p>
+            <p class="text"> 
+              <%= t('modern_med.content') %>
+            </p>
           </div>
         </div>
       </div>
@@ -41,21 +48,21 @@
     <div class="row">
       <div class="col-md-3 col-xs-6 text-center service-img outerbox">
         <%= image_tag('icons/care.svg')%>
-        <h3> Kompleksowa <br> opieka </h3>
+        <h3> <%= t('services.care').html_safe %> </h3>
       </div>
       <div class="col-md-3 col-xs-6 text-center service-img outerbox">
         <%= image_tag('icons/record.svg')%>
-        <h3> Szybka <br> diagnoza </h3>
+        <h3> <%= t('services.diagnosis').html_safe %> </h3>
       </div>
 
       <div class="col-md-3 col-xs-6 text-center service-img outerbox">
         <%= image_tag('icons/trust.svg')%>
-        <h3> Dyskrecja <br> i profesjoonalizm </h3>
+        <h3> <%= t('services.d_and_p').html_safe %>  </h3>
       </div>
 
       <div class="col-md-3 col-xs-6 text-center service-img outerbox">
         <%= image_tag('icons/communication.svg')%>
-        <h3> Stały kontakt <br> z lekarzem prowadzacym </h3>
+        <h3> <%= t('services.contact').html_safe %> </h3>
       </div>
     </div>
   </div>
@@ -68,23 +75,20 @@
     <div class="row flex-reverse-order-it">
       <div class="col-md-6">
         <div class="mobile-center m-25-top">
-          <span class="text-muted text-orange">ZDROWIE SEKSUALNE</span>
+          <span class="text-muted text-orange"><%= t('section.sexual.heading').upcase %></span>
         </div>
         <h1 class="header-heading"> 
-          Dbaj o swoje<br>
-          bezpieczństwo oraz<br>
-          zdrowie swojego<br>
-          partnera
+          <%= t('section.sexual.title').html_safe %>
         </h1>
         <ul class="points-orange">
-          <li>Profilaktyka HIV (PrEP, PEP)</li>
+          <li><%= t('section.sexual.point_1')%></li>
           <li>Ekspresowe testy chorób zakaźnych</li>
           <li>Planowanie szczepień niezbędnych dla utrzymania zdrowia(dospasowane do trybu życia)</li>
           <li>Szerroki zakres badań laboratoryjnych</li>
         </ul>
         <div style="display: flex; direction: column">
-          <button class="btn btn-orange my-2 my-sm-0" type="submit" style="margin-right: 10px">Umów wizytę</button>
-          <button class="btn btn-outline-orange my-2 my-sm-0" type="submit">Dowiedz się wizytę</button>
+          <button class="btn btn-orange my-2 my-sm-0" type="submit" style="margin-right: 10px"><%= t('section.book_now') %></button>
+          <button class="btn btn-outline-orange my-2 my-sm-0" type="submit"><%= t('section.book_later') %></button>
         </div>
       </div>
       <div class="col-md-6">
@@ -108,11 +112,10 @@
       </div>
       <div class="col-md-6">
         <div class="mobile-center m-25-top">
-          <span class="text-muted text-blue">ZDROWIE PSYCHICZNE</span>
+          <span class="text-muted text-blue"><%= t('section.psychology.heading').upcase %></span>
         </div>
         <h1 class="header-heading"> 
-          Zapewnij sobie wsparcie <br>
-          w trudnych sytuacjach  
+          <%= t('section.psychology.title').html_safe %>  
         </h1>
         <ul class="points-blue">
           <li>Smart life couching - wsparcie w życiu zawodowym i prywatnym</li>
@@ -121,9 +124,12 @@
           <li>Uzależnienia od aplikacji radkowych, narkotyków, alkoholu</li>
         </ul>
         <div style="display: flex; direction: column">
-          <button class="btn btn-blue my-2 my-sm-0" type="submit" style="margin-right: 10px">Umów wizytę</button>
+          <button class="btn btn-blue my-2 my-sm-0" type="submit" style="margin-right: 10px">
+            <%= t('section.book_now') %>
+        </button>
 
-          <button class="btn btn-outline-blue my-2 my-sm-0" type="submit">Dowiedz się wizytę</button>
+          <button class="btn btn-outline-blue my-2 my-sm-0" type="submit">
+            <%= t('section.book_later') %></button>
         </div>
       </div>
     </div>
@@ -137,12 +143,10 @@
     <div class="row flex-reverse-order-it">
       <div class="col-md-6">
         <div class="mobile-center m-25-top">
-          <span class="text-muted text-red">ZDROWIE FIZYCZNE</span>
+          <span class="text-muted text-red"><%= t('section.physical.heading').upcase %></span>
         </div>
         <h1 class="header-heading"> 
-          Dopasuj zdrowa rutynę <br>
-          do Twoich codziennych <br>
-          wyzwań
+          <%= t('section.physical.title').html_safe %>
         </h1>
         <ul class="points-red">
           <li>Medyczna rewitalizacja organizmu  <br>(m. in. kroplówki witaminowe)</li>
@@ -150,9 +154,9 @@
           <li>Praca z trenerem personalnym.</li>
         </ul>
         <div style="display: flex; direction: column">
-          <button class="btn btn-red my-2 my-sm-0" type="submit" style="margin-right: 10px">Umów wizytę</button>
+          <button class="btn btn-red my-2 my-sm-0" type="submit" style="margin-right: 10px"><%= t('section.book_now') %></button>
 
-          <button class="btn btn-outline-red my-2 my-sm-0" type="submit">Dowiedz się wizytę</button>
+          <button class="btn btn-outline-red my-2 my-sm-0" type="submit"><%= t('section.book_later') %></button>
         </div>
       </div>
       <div class="col-md-6">
@@ -264,8 +268,32 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
+<section id="images_section">
+</section>
+
+<section id="services_second">
+  <div class="container">
+    <h1 class="service_heading text-center"> 
+      <%= t('section.section_second.heading') %>
+    </h1>
+    <div class="row">
+      <div class="col-md-4 col-xs-6 text-center service-img outerbox">
+        <%= image_tag('icons/rainbow.svg')%>
+        <h3> <%= t('section.section_second.lgbt').html_safe %></h3>
+      </div>
+      <div class="col-md-4 col-xs-6 text-center service-img outerbox">
+        <%= image_tag('icons/globe.svg')%>
+        <h3> <%= t('section.section_second.global').html_safe %> </h3>
+      </div>
+
+      <div class="col-md-4 col-xs-6 text-center service-img outerbox">
+        <%= image_tag('icons/wheelchair.svg')%>
+        <h3> <%= t('section.section_second.disable').html_safe %>  </h3>
+      </div>
+    </div>
+  </div>
+</section>

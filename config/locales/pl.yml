@@ -1,5 +1,49 @@
 pl:
+  navbar: 
+    sex_health: "Zdrowie seksualne"
+    mental_health: "Zdrowie psychiczne"
+    physical_health: "Zdrowie fizyczne"
+    specialists: "Nasi specjaliści"
+    pricing: "Cennik"
+    book_now: "Umów wizytę"
+  footer: 
+    address: "Gdzie nas znaleźc?"
+    timing: "Jesteśmy otwarci"
+    contact: "Skontaktuj się"
+  header: 
+    title: "Dbamy o Twoje zdrowie"
+    sexual: "seksualne"
+    psychology: "psychiczne"
+    physical: "fizyczne"
+    header_text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+    book_now: "Umów wizytę"
+  modern_med: 
+    title: "Medycyna otwarta na potrzeby współczesności"
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo morbi tempor tristique est augue a mauris amet. Ipsum justo id ut ornare fusce massa quis sed mauris. Suscipit vel, id cras vitae eros nunc nam vitae. In fringilla volutpat sollicitudin purus nulla lectus at leo. Quis turpis tellus imperdiet leo tellus eget. Volutpat cras tortor libero velit."
+  services: 
+    care: "Kompleksowa <br> opieka"
+    diagnosis: "Szybka <br> diagnoza"
+    d_and_p: "Dyskrecja <br>i profesjonalizm"
+    contact: "Stały kontakt <br>z lekarzem prowadzacym"
+  section:
+    book_now: "Umów wizytę"
+    book_later: "Więcej"
+    sexual: 
+      heading: "zdrowie seksualne"
+      title: "Dbaj o swoje <br> bezpieczństwo oraz <br> zdrowie swojego<br> partnera"
+      point_1: "Profilaktyka HIV (PrEP, PEP)"
+    psychology:
+      heading: "zdrowie psychiczne"
+      title: "Zapewnij sobie wsparcie <br> w trudnych sytuacjach"
+    physical: 
+      heading: "zdrowie fizyczne"
+      title: "Dopasuj zdrowa rutynę <br>do Twoich codziennych <br>wyzwań"
+    section_second: 
+      heading: "Dostępność i otwartość są dla nas ważne."
+      lgbt: "Otwartość <br> na społeczność LGBT"
+      global: "Expat-friendly. <br> We speak English <br> and Russian"
+      disable: "Budynek dostosowany <br> do potrzeb osób <br> niepełnosprawnych"
   dashboard: 
-    title: "Kokpit"
+    title: "Dashboard"
   homepage: 
-    title: "Strona Główna"
+    title: "Homepage"

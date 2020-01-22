@@ -742,3 +742,24 @@ footer {
 ul li {
   color: #7E665B;
 }
+
+#services_second {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.service_heading {
+  margin-bottom: 5%;
+
+}
+
+@media only screen and (max-width: 600px) {
+  #services_second {
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+}
+
+#services_second h3 {
+  font-size: 21px;
+  margin-top: 48px;
+}
