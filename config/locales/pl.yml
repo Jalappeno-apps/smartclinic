@@ -48,6 +48,22 @@ pl:
     reservation: "Rezerwacja online jest dokonywana przez serwis Boooksy. Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
     physical:
       button_text: "zdrowie fizyczne"
+      section_1:
+        title: "Konsultacja lekarska"
+        t_1: "Profilaktyka zdrowotna"
+        t_2: "Szacowanie ryzyka chorób cywilizacyjnych: układu sercowo  – naczyniowego, chorób nowotworowych w oparciu o wywiad lekarski i rodzinny, badanie lekarskie i badanie dodatkowe"
+        t_3: "Przygotowanie zindywidualizowanego programu zdrowotnego"
+        t_4: "Szczepienia, dieta, suplementacja"
+      section_2:
+        title: "Rewitalizacja, detoksykacja dożylna"
+        t_1: "W oparciu o pakiet badań podstawowych, badanie lekarskie i czynnik wyczerpujący organizm (przemęczenie, alkohol, dieta restrykcyjna) podajemy mieszankę płynów, elektrolitów  i witamin – dożylnie, doustnie i domięśniowo  w zależności od zapotrzebowania i stanu pacjenta."
+      section_3: 
+        title: "Szczepienia"
+        t_1: "Kwalifikacja do szczepień oraz ich podanie. Plan szczepień ustalany według potrzeb. Możliwość zamówienia szczepionek według potrzeb."
+      section_4: 
+        title: "Ocena zaburzeń psychosomatycznych"
+        t_1: "Ocena lekarza i psychologa (dwie wizyty po 30 minut)"
+        t_2: "Zaplanowanie diagnostyki i leczenia – fizycznego  i psychologicznego"
     sexual:
       button_text: "zdrowie seksualne"
     psychologic: 

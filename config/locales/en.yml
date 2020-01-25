@@ -31,8 +31,7 @@ en:
     sexual: 
       heading: "sexual wellness"
       title: "Take care of yourself <br> and your partner's <br>health"
-      point_1: "HIV Prevention (PrEP, PEP)" #new
-      point_2: #example
+      point_1: "HIV Prevention (PrEP, PEP)" 
     psychology:
       heading: "psychological wellness"
       title: "Zapewnij sobie wsparcie <br> w trudnych sytuacjach"
@@ -49,12 +48,80 @@ en:
     reservation: "Rezerwacja online jest dokonywana przez serwis Boooksy. <br>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
     physical:
       button_text: "Physical health"
+      section_1:
+        title: "Medical consultation"
+        t_1: "Preventive care"
+        t_2: "Estimating the risk of civilization diseases: cardiovascular system, cancer based on medical and family history, medical examination and additional examination"
+        t_3: "Preparation of an individualized health program"
+        t_4: "vaccination, diet, supplementation"
+      section_2:
+        title: "Revitalization, intravenous detoxification"
+        t_1: "Based on the basic research package, medical examination and exhausting factor (fatigue, alcohol, restrictive diet) we give a mixture of fluids, electrolytes and vitamins - intravenously, orally and intramuscularly depending on the patient's needs and condition."
+      section_3: 
+        title: "Vaccinations"
+        t_1: "Vaccination qualification and administration. Vaccination plan established as needed. Vaccines can be ordered as needed."
+      section_4: 
+        title: "Assessment of psychosomatic disorders"
+        t_1: "Doctor and psychologist assessment (two visits of 30 minutes)"
+        t_2: "Planning diagnostics and treatment - physical and psychological"
+    
     sexual:
       button_text: "Sexual health"
+      section_1:
+        title: "Medical consultation"
+        t_1: "Preventive care"
+        t_2: "Estimating the risk of civilization diseases: cardiovascular system, cancer based on medical and family history, medical examination and additional examination"
+        t_3: "Preparation of an individualized health program"
+        t_4: "vaccination, diet, supplementation"
+      section_2:
+        title: "Revitalization, intravenous detoxification"
+        t_1: "Based on the basic research package, medical examination and exhausting factor (fatigue, alcohol, restrictive diet) we give a mixture of fluids, electrolytes and vitamins - intravenously, orally and intramuscularly depending on the patient's needs and condition."
+      section_3: 
+        title: "Vaccinations"
+        t_1: "Vaccination qualification and administration. Vaccination plan established as needed. Vaccines can be ordered as needed."
+      section_4: 
+        title: "Assessment of psychosomatic disorders"
+        t_1: "Doctor and psychologist assessment (two visits of 30 minutes)"
+        t_2: "Planning diagnostics and treatment - physical and psychological"
+    
     psychologic: 
       button_text: "Mental health"
+      section_1:
+        title: "Medical consultation"
+        t_1: "Preventive care"
+        t_2: "Estimating the risk of civilization diseases: cardiovascular system, cancer based on medical and family history, medical examination and additional examination"
+        t_3: "Preparation of an individualized health program"
+        t_4: "vaccination, diet, supplementation"
+      section_2:
+        title: "Revitalization, intravenous detoxification"
+        t_1: "Based on the basic research package, medical examination and exhausting factor (fatigue, alcohol, restrictive diet) we give a mixture of fluids, electrolytes and vitamins - intravenously, orally and intramuscularly depending on the patient's needs and condition."
+      section_3: 
+        title: "Vaccinations"
+        t_1: "Vaccination qualification and administration. Vaccination plan established as needed. Vaccines can be ordered as needed."
+      section_4: 
+        title: "Assessment of psychosomatic disorders"
+        t_1: "Doctor and psychologist assessment (two visits of 30 minutes)"
+        t_2: "Planning diagnostics and treatment - physical and psychological"
+    
     lab: 
-      button_text: "BADANIA LABORATORYJNE"
+      button_text: "Lab tests"
+      section_1:
+        title: "Medical consultation"
+        t_1: "Preventive care"
+        t_2: "Estimating the risk of civilization diseases: cardiovascular system, cancer based on medical and family history, medical examination and additional examination"
+        t_3: "Preparation of an individualized health program"
+        t_4: "vaccination, diet, supplementation"
+      section_2:
+        title: "Revitalization, intravenous detoxification"
+        t_1: "Based on the basic research package, medical examination and exhausting factor (fatigue, alcohol, restrictive diet) we give a mixture of fluids, electrolytes and vitamins - intravenously, orally and intramuscularly depending on the patient's needs and condition."
+      section_3: 
+        title: "Vaccinations"
+        t_1: "Vaccination qualification and administration. Vaccination plan established as needed. Vaccines can be ordered as needed."
+      section_4: 
+        title: "Assessment of psychosomatic disorders"
+        t_1: "Doctor and psychologist assessment (two visits of 30 minutes)"
+        t_2: "Planning diagnostics and treatment - physical and psychological"
+    
   dashboard: 
     title: "Dashboard"
   homepage: 

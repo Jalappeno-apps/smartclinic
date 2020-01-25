@@ -1,53 +1,87 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 Pricing.all.destroy_all
 
-Pricing.create!(
-  title: "Konsultacja lekarska",
+price_1 = Pricing.create!(
+  title: "section_1",
   ptype: :physical,
   price: "200 zł / 40 min"
 )
 
-p1 = Point.new(text: "Profilaktyka zdrowotna")
-p2 = Point.new(text: "Szacowanie ryzyka chorób cywilizacyjnych: układu sercowo  – naczyniowego, chorób nowotworowych w oparciu o wywiad lekarski i rodzinny, badanie lekarskie i badanie dodatkowe")
-p3 = Point.new(text: "Przygotowanie zindywidualizowanego programu zdrowotnego")
-p4 = Point.new(text: "Szczepienia, dieta, suplementacja")
+p1 = Point.new(text: "t_1")
+p2 = Point.new(text: "t_2")
+p3 = Point.new(text: "t_3")
+p4 = Point.new(text: "t_4")
 
-price_1 = Pricing.first
 price_1.points << p1 
 price_1.points << p2
 price_1.points << p3
 price_1.points << p4
 
-Pricing.create!(
-  title: "Rewitalizacja, detoksykacja dożylna",
+price_2 = Pricing.create!(
+  title: "section_2",
   ptype: :physical,
   price: "500 zł / 2 godz"
 )
+price_2.points << Point.new(text: "t_1")
 
-Pricing.second.points << Point.new(text: "W oparciu o pakiet badań podstawowych, badanie lekarskie i czynnik wyczerpujący organizm (przemęczenie, alkohol, dieta restrykcyjna) podajemy mieszankę płynów, elektrolitów  i witamin – dożylnie, doustnie i domięśniowo  w zależności od zapotrzebowania i stanu pacjenta.")
-
-Pricing.create!(
-  title: "Szczepienia",
+price_3 = Pricing.create!(
+  title: "section_3",
   ptype: :physical,
   price: "75 zł / 20 min"
 )
+price_3.points << Point.new(text: "t_2")
 
-Pricing.third.points << Point.new(text: "Kwalifikacja do szczepień oraz ich podanie. Plan szczepień ustalany według potrzeb. Możliwość zamówienia szczepionek według potrzeb.")
-
-Pricing.create!(
-  title: "Ocena zaburzeń psychosomatycznych",
+price_4 = Pricing.create!(
+  title: "section_4",
   ptype: :physical,
   price: "280 zł / 60 min"
 )
 
-p1 = Point.new(text: "Ocena lekarza i psychologa (dwie wizyty po 30 minut)")
-p2 = Point.new(text: "Zaplanowanie diagnostyki i leczenia – fizycznego  i psychologicznego")
+p1 = Point.new(text: "t_1")
+p2 = Point.new(text: "t_2")
 
-Pricing.last.points << p1
-Pricing.last.points << p2
+price_4.points << p1
+price_4.points << p2
+
+price_5 = Pricing.create!(
+  title: "section_1",
+  ptype: :lab,
+  price: "200 zł / 40 min"
+)
+
+p1 = Point.new(text: "t_1")
+p2 = Point.new(text: "t_2")
+p3 = Point.new(text: "t_3")
+p4 = Point.new(text: "t_4")
+
+price_5.points << p1 
+price_5.points << p2
+price_5.points << p3
+price_5.points << p4
+
+price_6 = Pricing.create!(
+  title: "section_2",
+  ptype: :lab,
+  price: "500 zł / 2 godz"
+)
+price_6.points << Point.new(text: "t_1")
+
+price_7 = Pricing.create!(
+  title: "section_3",
+  ptype: :lab,
+  price: "75 zł / 20 min"
+)
+
+price_7.points << Point.new(text: "t_2")
+
+price_8 = Pricing.create!(
+  title: "section_4",
+  ptype: :lab,
+  price: "280 zł / 60 min"
+)
+
+p1 = Point.new(text: "t_1")
+p2 = Point.new(text: "t_2")
+
+price_8.points << p1
+price_8.points << p2
+
