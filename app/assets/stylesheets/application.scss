@@ -863,3 +863,34 @@ li.pricing_box a:hover {
     margin: initial;
   }
 }
+
+.pricing_title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #251007;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 30px;
+  /* or 143% */
+  // display: flex;
+  align-items: center;
+  text-align: right;
+  
+  color: #251007;
+}
+
+@media only screen and (max-width: 600px) {
+  .price {
+    text-align: center;
+  }
+}
+
+.orange {
+  border: 0.7px solid #F1A378;
+  box-sizing: border-box;
+}

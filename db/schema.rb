@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_17_092611) do
+ActiveRecord::Schema.define(version: 2020_01_25_220639) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,18 @@ ActiveRecord::Schema.define(version: 2019_12_17_092611) do
     t.string "name"
     t.string "booksy_url"
     t.string "lek_url"
+  end
+
+  create_table "points", force: :cascade do |t|
+    t.bigint "pricing_id"
+    t.string "text"
+    t.index ["pricing_id"], name: "index_points_on_pricing_id"
+  end
+
+  create_table "pricings", force: :cascade do |t|
+    t.string "price"
+    t.integer "ptype"
+    t.string "title"
   end
 
   create_table "specializations", force: :cascade do |t|
