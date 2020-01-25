@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources :dashboard, only: :index
   resources :doctors, only: [:index, :show]
-
+  resources :pricing, only: [:index]
   namespace :dashboard do
     resources :doctors, only: [:index, :create, :show]
     resources :blogs, only: :index

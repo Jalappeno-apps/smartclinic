@@ -1,0 +1,51 @@
+section style="overflow-x: hidden" id="pricing"
+  .row
+    .col-md-12.text-center
+      h1 
+        = t('pricing.title')
+      p.pricing_text
+        = t('pricing.reservation').html_safe
+    .col-md-12
+      ul.nav.justify-content-center.scroll role="tablist" id="pricing_tabs_nav"
+        li.nav-item.pricing_box.active_tab
+          a.nav-link id="physical-tab" data-toggle="tab" href="#physical_tab" role="tab" aria-controls="physical" aria-selected="true"
+            = t('pricing.physical.button_text').upcase
+        
+        li.nav-item.pricing_box
+          a.nav-link id="sexual-tab" data-toggle="tab" href="#sexual_tab" role="tab" aria-controls="sexual" aria-selected="true"
+            = t('pricing.sexual.button_text').upcase
+        
+        li.nav-item.pricing_box
+          a.nav-link id="psychological-tab" data-toggle="tab" href="#psychological" role="tab" aria-controls="psychological" aria-selected="true"
+            = t('pricing.psychologic.button_text').upcase
+        
+        li.nav-item.pricing_box
+          a.nav-link id="lab-tab" data-toggle="tab" href="#lab" role="tab" aria-controls="lab" aria-selected="true"
+            = t('pricing.lab.button_text').upcase
+      
+      .container.pricing_tabs
+        .tab-content id="myTabContent"
+          .tab-pane.fade.show.active id="physical_tab" role="tabpanel"aria-labelledby="physical-tab"
+            = render 'pricing/layouts/physical_tab'
+
+          .tab-pane.fade id="psychological" role="tabpanel" aria-labelledby="psychological-tab"
+            = render 'pricing/layouts/psychological_tab'
+
+          .tab-pane.fade id="sexual_tab" role="tabpanel" aria-labelledby="sexual-tab"
+            = render 'pricing/layouts/sexual_tab'
+
+          .tab-pane.fade id="lab" role="tabpanel" aria-labelledby="lab-tab"
+            = render 'pricing/layouts/lab_tab'
+
+javascript:
+  var btns = document.getElementsByClassName("pricing_box");
+  console.log(btns);
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active_tab");
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace("active_tab", "");
+    }
+    this.className += " active_tab";
+    });
+  }

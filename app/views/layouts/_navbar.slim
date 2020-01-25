@@ -26,8 +26,8 @@ nav.navbar.navbar-expand-lg.navbar-light
           a.nav-link href="#" 
             = t('navbar.specialists')
         li.nav-item
-          a.nav-link href="#"
-            = t('navbar.pricing')
+          = link_to t('navbar.pricing'), pricing_index_path, class: 'nav-link'
+
         li
           .my-2.my-lg-0
             button.btn.btn-brown.my-2.my-sm-0 type="submit" 

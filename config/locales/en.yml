@@ -44,6 +44,17 @@ en:
       lgbt: "Inclusive <br>and friendly"
       global: "Expat-friendly. <br> We speak English <br> and Russian"
       disable: "Wheelchair <br>accessible"
+  pricing: 
+    title: "Prices"
+    reservation: "Rezerwacja online jest dokonywana przez serwis Boooksy. <br>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+    physical:
+      button_text: "Physical health"
+    sexual:
+      button_text: "Sexual health"
+    psychologic: 
+      button_text: "Mental health"
+    lab: 
+      button_text: "BADANIA LABORATORYJNE"
   dashboard: 
     title: "Dashboard"
   homepage: 
