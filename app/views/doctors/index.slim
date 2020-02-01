@@ -1,8 +1,22 @@
-h1 All Doctors
+.container.specialists_top
+  .row
+    .col-md-12.text-center
+      h1 = t('specialists.title')
 
-- if doctors.any?
-  - doctors.each do |doctor|
-    h4 = link_to doctor.name&.to_str.capitalize, doctor_path(doctor)
-    ul
-      - doctor.specializations.each do |sp|
-  	   li = sp.name
+      p.specialist_text = t('specialists.content')
+  
+  .row
+    - if doctors.any?
+      - doctors.each_with_index do |doctor, index|
+        .col-md-3
+          a href="#{doctor_path(doctor)}"
+            .doctor_box
+              .doctor_image class=="#{numbers_to_words(index+1)}-overlay"
+                .overlay 
+                = image_tag 'icons/white-arrow.svg', class: 'doctors-white-arrow'
+                = image_tag 'square.jpg', class: "img-thumbnail remove-border"
+          - doctor.specializations.each do |sp|
+           span class=="spec-text #{numbers_to_words(index+1)}-text" = t("specializations.#{sp.name}").upcase
+          .doctor-text = link_to doctor.name, doctor_path(doctor) 
+          
+          p.doctor-description = doctor.description

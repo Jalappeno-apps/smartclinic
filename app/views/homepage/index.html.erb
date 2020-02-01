@@ -6,9 +6,22 @@
             <%= t('header.title') %> 
             <% if locale.to_s == 'en' %> 
               <br> 
-              <span id="typed" class="underline"></span>
+              <span id="typed" 
+              data-attrs='{
+              "sexual": "<%= t('header.sexual') %>" ,
+              "psychological": "<%= t('header.psychology') %>",
+              "physical": "<%= t('header.physical') %>"
+              }'
+              class="underline"></span>
+            
             <% else %>
-              <span id="typed" class="underline"></span> 
+              <span id="typed" 
+              data-attrs='{
+              "sexual": "<%= t('header.sexual') %>" ,
+              "psychological": "<%= t('header.psychology') %>",
+              "physical": "<%= t('header.physical') %>"
+              }'
+              class="underline"></span> 
             <% end %>
         </h1>
 
@@ -70,7 +83,7 @@
 <!-- SERVICES SECTION ENDS -->
 
 <!-- COLUMNS SECTION -->
-<section id="sexual">
+<section id="sexual" class="scroll-animations">
   <div class="container">
     <div class="row flex-reverse-order-it">
       <div class="col-md-6">
@@ -91,9 +104,15 @@
           <button class="btn btn-outline-orange my-2 my-sm-0" type="submit"><%= t('section.book_later') %></button>
         </div>
       </div>
-      <div class="col-md-6">
+
+
+      <div class="spacer s2"></div>
+      <div id="trigger1" class="spacer s0"></div>
+
+
+      <div class="col-md-6" id="reveal1">
         <div class="image-overlay-wrapper">
-          <%= image_tag('sexual_image.png', class: "img-fluid image-sections") %>
+          <%= image_tag('sexual_image.png', id:"sexual_section_image", class: "img-fluid image-sections") %>
         </div>
       </div>
     </div>
@@ -105,7 +124,11 @@
 <section id="psychology">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+
+      <div class="spacer s2"></div>
+      <div id="trigger2" class="spacer s0"></div>
+
+      <div class="col-md-6" id="reveal2">
         <div class="image-overlay-wrapper">
           <%= image_tag('psych_image.png', class: "img-fluid image-sections") %>
         </div>
@@ -159,7 +182,11 @@
           <button class="btn btn-outline-red my-2 my-sm-0" type="submit"><%= t('section.book_later') %></button>
         </div>
       </div>
-      <div class="col-md-6">
+
+      <div class="spacer s2"></div>
+      <div id="trigger3" class="spacer s0"></div>
+
+      <div class="col-md-6" id="reveal3">
         <div class="image-overlay-wrapper image-sections">
           <%= image_tag('physical_image.png', class: "img-fluid image-sections") %>
         </div>

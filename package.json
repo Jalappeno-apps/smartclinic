@@ -7,9 +7,12 @@
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^4.0.7",
+    "animate.css": "^3.7.2",
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
+    "scrollmagic": "^2.0.7",
     "turbolinks": "^5.2.0",
     "typed.js": "^2.0.11"
   },

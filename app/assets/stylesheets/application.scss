@@ -1,5 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'animate.css';
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -143,7 +144,13 @@ nav {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 11H3' stroke='%23251007' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21 6H3' stroke='%23251007' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21 16H3' stroke='%23251007' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21 21H3' stroke='%23251007' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
   border: none !important;
 }
+.dropdown-toggle::after {
+  // display: none;
+}
 
+.dropdoown {
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L4.15 5.2L8 1' stroke='%23C69178' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
 .navbar-toggler {
   border: none;
 }
@@ -894,3 +901,160 @@ li.pricing_box a:hover {
   border: 0.7px solid #F1A378;
   box-sizing: border-box;
 }
+
+// =================== specialists ====================
+.specialists_top {
+  margin-top: 5%;
+}
+
+.specialist_text {
+  color: #7E665B;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 36px;
+  margin-bottom: 10%;
+}
+
+// =================== specialists end ====================
+
+
+// =================== doctors images =====================
+.remove-border {
+  border: none;
+  background-color: initial;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-thumbnail {
+  padding: 0px;
+}
+
+.doctor_image {
+  position: relative;
+}
+
+.doctor_image:hover img {
+  opacity: 1;
+}
+.doctor_image:hover .overlay {
+  opacity: 0.4;
+}
+
+.doctor_image img {
+  opacity: 0.3;
+  display: block;
+  // width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-bottom: 18px;
+}
+
+.doctor-text a {
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.doctor-description {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #000000;
+}
+
+.spec-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.one-overlay {
+  background: #DA7F4E;
+}
+
+.one-text {
+  color: #DA7F4E;
+}
+
+.two-overlay {
+  background: #ECCC5A;
+}
+
+.two-text {
+  color: #ECCC5A;
+}
+
+.three-overlay {
+  background: #AE1515;
+}
+
+.three-text {
+  color: #AE1515;
+}
+
+.four-overlay {
+  background: #DA7F4E;
+}
+
+.four-text {
+  color: #DA7F4E;
+}
+
+.five-overlay {
+  background: #ECCC5A;
+}
+
+.five-text {
+  color: #ECCC5A;
+}
+
+.six-overlay {
+  background: #AE1515;
+}
+
+.six-text {
+  color: #AE1515;
+}
+
+.seven-overlay {
+  background: #DA7F4E;
+}
+
+.seven-text {
+  color: #DA7F4E;
+}
+
+.doctors-white-arrow {
+  opacity: 1;
+  z-index: 100;
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+}
+
+// ================ doctors images end ===================
+
+

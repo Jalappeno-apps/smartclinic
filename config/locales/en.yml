@@ -54,6 +54,8 @@ en:
         t_2: "Estimating the risk of civilization diseases: cardiovascular system, cancer based on medical and family history, medical examination and additional examination"
         t_3: "Preparation of an individualized health program"
         t_4: "vaccination, diet, supplementation"
+        t_5: "anything"
+        
       section_2:
         title: "Revitalization, intravenous detoxification"
         t_1: "Based on the basic research package, medical examination and exhausting factor (fatigue, alcohol, restrictive diet) we give a mixture of fluids, electrolytes and vitamins - intravenously, orally and intramuscularly depending on the patient's needs and condition."
@@ -121,7 +123,13 @@ en:
         title: "Assessment of psychosomatic disorders"
         t_1: "Doctor and psychologist assessment (two visits of 30 minutes)"
         t_2: "Planning diagnostics and treatment - physical and psychological"
-    
+  specialists:
+    title: "Our Specialists"
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo morbi tempor tristique est augue a mauris amet. Ipsum justo id ut ornare fusce massa quis sed mauris. Suscipit vel, id cras vitae eros nunc nam vitae. In fringilla volutpat sollicitudin purus nulla lectus at leo. Quis turpis tellus imperdiet leo tellus eget. Volutpat cras tortor libero velit."
+  specializations:
+    sexual: "Sexual Health"
+    physical: "Physical Health"
+    mental: "Phsychological Health"
   dashboard: 
     title: "Dashboard"
   homepage: 

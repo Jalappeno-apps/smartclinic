@@ -1,0 +1,47 @@
+#reveal1 {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 1.5s ease;
+}
+
+#reveal1.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+#reveal2 {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 1.5s ease;
+}
+
+#reveal2.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+#reveal3 {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 1.5s ease;
+}
+
+#reveal3.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}

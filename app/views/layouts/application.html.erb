@@ -6,7 +6,10 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'animations', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -17,16 +20,8 @@
     <%= yield %>
     
     <%= render 'layouts/footer' %>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script>
-      var typed4 = new Typed('#typed', {
-        strings: ["<%= t('header.sexual') %>", "<%= t('header.psychology') %>", "<%= t('header.physical') %>"],
-        typeSpeed: 70,
-        backSpeed: 40,
-        bindInputFocusEvents: true,
-        loop: true,
-        smartBackspace: true 
-      });
-  </script>
+    
+    <%= javascript_pack_tag 'scroll_magic', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'typed_animations', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

@@ -3,7 +3,7 @@ nav.navbar.navbar-expand-lg.navbar-light
     a.navbar-brand href="/"
       = image_tag('logo.svg', id: "logo", width: "230", height: "35", alt: "smartlife clinic")
     button.navbar-toggler type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-        span.navbar-toggler-icon
+      span.navbar-toggler-icon
 
     .collapse.navbar-collapse id="navbarSupportedContent"
       ul.navbar-nav.ml-auto
@@ -23,12 +23,10 @@ nav.navbar.navbar-expand-lg.navbar-light
           a.nav-link href="#" 
             = t('navbar.physical_health')
         li.nav-item
-          a.nav-link href="#" 
-            = t('navbar.specialists')
+          = link_to t('navbar.specialists'), doctors_path, class: 'nav-link'
         li.nav-item
           = link_to t('navbar.pricing'), pricing_index_path, class: 'nav-link'
 
         li
           .my-2.my-lg-0
-            button.btn.btn-brown.my-2.my-sm-0 type="submit" 
-              = t('navbar.book_now')
+            = button_to t('navbar.book_now'), "https://booksy.com/pl-pl/6969_smart-life-clinic-kubicka-krapiec_zdrowie_3_warszawa", class: "btn btn-brown my-2 my-sm-0", type: 'submit'

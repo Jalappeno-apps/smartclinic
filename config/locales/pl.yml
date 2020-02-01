@@ -54,6 +54,7 @@ pl:
         t_2: "Szacowanie ryzyka chorób cywilizacyjnych: układu sercowo  – naczyniowego, chorób nowotworowych w oparciu o wywiad lekarski i rodzinny, badanie lekarskie i badanie dodatkowe"
         t_3: "Przygotowanie zindywidualizowanego programu zdrowotnego"
         t_4: "Szczepienia, dieta, suplementacja"
+        t_5: "anything"
       section_2:
         title: "Rewitalizacja, detoksykacja dożylna"
         t_1: "W oparciu o pakiet badań podstawowych, badanie lekarskie i czynnik wyczerpujący organizm (przemęczenie, alkohol, dieta restrykcyjna) podajemy mieszankę płynów, elektrolitów  i witamin – dożylnie, doustnie i domięśniowo  w zależności od zapotrzebowania i stanu pacjenta."
@@ -70,6 +71,13 @@ pl:
       button_text: "zdrowie psychiczne"
     lab: 
       button_text: "badania laboratoryjne"
+  specialists:
+    title: "Nasi specjaliści"
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo morbi tempor tristique est augue a mauris amet. Ipsum justo id ut ornare fusce massa quis sed mauris. Suscipit vel, id cras vitae eros nunc nam vitae. In fringilla volutpat sollicitudin purus nulla lectus at leo. Quis turpis tellus imperdiet leo tellus eget. Volutpat cras tortor libero velit."
+  specializations:
+    sexual: "Zdrowie seksualne"
+    physical: "Zdrowie fizyczne"
+    mental: "Zdrowie psychiczne"
   dashboard: 
     title: "Dashboard"
   homepage: 
