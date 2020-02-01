@@ -14,12 +14,6 @@
           transform: none;
 }
 
-#reveal1-btn {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 500ms, opacity 500ms linear;
-}
-
 #reveal2.visible {
   opacity: 1;
   -webkit-transform: none;
@@ -29,12 +23,6 @@
           transform: none;
 }
 
-#reveal2-btn {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 500ms, opacity 500ms linear;
-}
-
 #reveal3.visible {
   opacity: 1;
   -webkit-transform: none;
@@ -42,18 +30,6 @@
       -ms-transform: none;
        -o-transform: none;
           transform: none;
-}
-
-#reveal3-btn {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 500ms, opacity 500ms linear;
-}
-
-#reveal1-btn.visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
 }
 
 

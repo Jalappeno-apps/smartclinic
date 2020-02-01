@@ -9,5 +9,7 @@ var typed4 = new Typed('#typed', {
   backSpeed: 40,
   bindInputFocusEvents: true,
   loop: true,
-  smartBackspace: true 
+  smartBackspace: true,
+  showCursor: true,
+  cursorChar: '|'
 });
