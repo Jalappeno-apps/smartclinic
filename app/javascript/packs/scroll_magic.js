@@ -1,6 +1,5 @@
 import ScrollMagic from "scrollmagic";
 
-
 var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
