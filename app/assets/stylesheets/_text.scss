@@ -1,0 +1,28 @@
+.text-orange {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: map-get($smartlife, 'orange-100') !important;
+}
+
+.text-dark-orange {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color:  !important;
+}
+
+.text-red {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: map-get($smartlife, 'red-50') !important;
+}
+
+.text-yellow {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color:  map-get($smartlife, 'yellow-50') !important;
+}
+

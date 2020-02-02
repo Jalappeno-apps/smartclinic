@@ -78,6 +78,11 @@ pl:
     sexual: "Zdrowie seksualne"
     physical: "Zdrowie fizyczne"
     mental: "Zdrowie psychiczne"
+  categories: 
+    sexual: 
+      title: "Zdrowie seksualne"
+      heading: "Dbaj o bezpieczeństwo  <br> oraz zdrowie swoje <br>  i Twojego partnera"
+      section_1: "W jakich sytuacjach kontakt jest ryzykowny?"
   dashboard: 
     title: "Dashboard"
   homepage: 

@@ -1,0 +1,80 @@
+@import 'colors';
+
+.btn-orange {
+  background: map-get($smartlife, 'orange-50');
+  border: 0.857143px solid map-get($smartlife, 'orange-50');
+  border-radius: 5.14286px;
+  box-sizing: border-box;
+  color: $background-white;
+  font-weight: 600;
+}
+
+.btn-dark-orange {
+  background: map-get($smartlife, 'orange-100');
+  border: 0.857143px solid map-get($smartlife, 'orange-100');
+  border-radius: 5.14286px;
+  box-sizing: border-box;
+  color: $background-white;
+  font-weight: 600;
+}
+
+.btn-outline-orange {
+  border: 1.2px solid map-get($smartlife, 'orange-100');
+  box-sizing: border-box;
+  border-radius: 5.14286px;
+  color: map-get($smartlife, 'orange-100');
+  font-weight: 600;
+}
+
+.btn-red {
+  background: map-get($smartlife, 'red-50');
+  border: 0.857143px solid map-get($smartlife, 'red-50');
+  border-radius: 5.14286px;
+  box-sizing: border-box;
+  color: $background-white;
+  font-weight: 600;
+}
+
+.btn-outline-red {
+  border: 1.2px solid map-get($smartlife, 'red-50');
+  box-sizing: border-box;
+  border-radius: 5.14286px;
+  color: #BA2020;
+  font-weight: 600;
+}
+
+.btn-outline-yellow {
+  border: 1.2px solid map-get($smartlife, 'yellow-50');
+  box-sizing: border-box;
+  border-radius: 5.14286px;
+  color: map-get($smartlife, 'yellow-50');
+  font-weight: 600;
+}
+
+.btn-yellow {
+  background: map-get($smartlife, 'yellow-50');
+  border: 0.857143px solid map-get($smartlife, 'yellow-50');
+  border-radius: 5.14286px;
+  box-sizing: border-box;
+  color: $background-white;
+  font-weight: 600;
+}
+
+.btn-brown {
+  background: map-get($smartlife, 'brown-50');
+  border: 2px solid map-get($smartlife, 'brown-50');
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: $off-white;
+  font-weight: 600;
+}
+
+
+.btn-brown:hover {
+  background: rgba(65,31,17, 0.8);
+  border: 2px solid rgba(65,31,17, 0.8);
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+}

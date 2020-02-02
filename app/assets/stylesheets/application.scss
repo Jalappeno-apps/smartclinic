@@ -1,20 +1,8 @@
-@import 'bootstrap/scss/_functions.scss';
-@import 'bootstrap/scss/_variables.scss';
-@import 'bootstrap/scss/_mixins.scss';
-@import 'bootstrap/scss/_root.scss';
-@import 'bootstrap/scss/_reboot.scss';
-@import 'bootstrap/scss/_type.scss';
+@import 'bootstrap';
 
-@import 'bootstrap/scss/_buttons';
-@import 'bootstrap/scss/_dropdown.scss';
-@import 'bootstrap/scss/_grid.scss';
-@import 'bootstrap/scss/_images.scss';
-
-@import 'bootstrap/scss/_media.scss';
-@import 'bootstrap/scss/_nav.scss';
-@import 'bootstrap/scss/_navbar.scss';
-@import 'bootstrap/scss/_transitions.scss';
-@import 'bootstrap/scss/_utilities.scss';
+@import 'colors';
+@import 'buttons';
+@import 'text';
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -22,111 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-.text-dark-orange {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  color: #EB7839 !important;
-}
-
-.text-red {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  color: #BA2020 !important;
-}
-
-.text-blue {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  color: #FFAE10 !important;
-}
-
-.text-orange {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  color: #F09868 !important;
-}
-
-.btn-outline-red {
-  border: 1.2px solid #BA2020;
-  box-sizing: border-box;
-  border-radius: 5.14286px;
-  color: #BA2020;
-  font-weight: 600;
-}
-
-.btn-dark-orange {
-  background: #EB7839;
-  border: 0.857143px solid #EB7839;
-  border-radius: 5.14286px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  font-weight: 600;
-}
-
-.btn-red {
-  background: #BA2020;
-  border: 0.857143px solid #BA2020;
-  border-radius: 5.14286px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  font-weight: 600;
-}
-
-.btn-outline-blue {
-  border: 1.2px solid #FFAE10;
-  box-sizing: border-box;
-  border-radius: 5.14286px;
-  color: #FFAE10;
-  font-weight: 600;
-}
-
-.btn-blue {
-  background: #FFCA10;
-  border: 0.857143px solid #FFCA10;;
-  border-radius: 5.14286px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  font-weight: 600;
-}
-
-.btn-outline-orange {
-  border: 1.2px solid #F09868;
-  box-sizing: border-box;
-  border-radius: 5.14286px;
-  color: #F09868;
-  font-weight: 600;
-}
-
-.btn-brown {
-  background: #411F11;
-  border: 2px solid #411F11;
-  box-sizing: border-box;
-  border-radius: 6px;
-  color: #F9F6F4;
-  font-weight: 600;
-}
-
-.btn-brown:hover {
-  background: rgba(65,31,17, 0.8);
-  border: 2px solid rgba(65,31,17, 0.8);
-  box-sizing: border-box;
-  border-radius: 6px;
-  color: white;
-  font-weight: 600;
-}
-
-.btn-orange {
-  background: #F09868;
-  border: 0.857143px solid #F09868;;
-  border-radius: 5.14286px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  font-weight: 600;
-}
 @media (min-width: 1200px) {
   .container-xl  {
     max-width: 2500px !important;
@@ -168,7 +51,6 @@ nav {
 .navbar-toggler {
   border: none;
 }
-
 
 @media only screen and (max-width: 600px) {
   #logo {
@@ -623,7 +505,7 @@ footer {
   right: 50%;
   width: 100vw;
 
-  margin-top: 5%;
+  // margin-top: 5%;
   min-height: 500px;
   min-width: 100vh;
   background-color: #F9F6F4;
@@ -1071,4 +953,29 @@ li.pricing_box a:hover {
 
 // ================ doctors images end ===================
 
+// =============== sexual health category page ===========
 
+#sexual-health-page {
+  background: linear-gradient(180deg, #FFC3A3 0%, #FFFBF9 15.1%, #FFFBF9 78.57%);
+  padding-top: 10%;
+}
+
+.sexual-health-heading {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.sexual-health-text {
+  margin-top: 36px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #7E665B;
+}
+
+#sexual-health-breaker {
+  margin-top: 5%;
+}
