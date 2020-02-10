@@ -1,4 +1,4 @@
-class Dashboard::DoctorsController < ApplicationController
+class Dashboard::DoctorsController < Dashboard::ApplicationController
   before_action :authenticate_user!
   helper_method :doctor
 
@@ -16,14 +16,25 @@ class Dashboard::DoctorsController < ApplicationController
     Doctor.find(doctor_params[:id]).destroy!
   end
 
+  def update 
+    doctor.update!(doctor_params)
+
+    redirect_to dashboard_doctor_path(doctor)
+  end
 
   private
-
     def doctor
       doctor ||= Doctor.find(params[:id])
     end
 
     def doctor_params 
-      params.require(:doctor).permit(:name, :booksy_url, :lek_url, :profile_picture)
+      params.require(:doctor).permit(
+        :name, 
+        :booksy_url, 
+        :lek_url, 
+        :profile_picture, 
+        :color,
+        :description
+      )
     end
 end

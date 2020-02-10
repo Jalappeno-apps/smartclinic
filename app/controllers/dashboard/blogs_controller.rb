@@ -1,4 +1,4 @@
-class Dashboard::BlogsController < ApplicationController
+class Dashboard::BlogsController < Dashboard::ApplicationController
   before_action :authenticate_user!
 
   def index; end

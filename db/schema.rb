@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_26_142824) do
+ActiveRecord::Schema.define(version: 2020_02_10_091422) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2020_01_26_142824) do
     t.string "booksy_url"
     t.string "lek_url"
     t.string "description"
+    t.integer "color", default: 0
   end
 
   create_table "points", force: :cascade do |t|

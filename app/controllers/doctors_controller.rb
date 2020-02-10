@@ -16,18 +16,4 @@ private
   def doctor_params
   	params.permit(:id, :name, :booksy_url, :lek_url, :specialization)
   end
-
-  def numbers_to_words(num)
-    numbbas = {
-      8 => "eight",
-      7 => "seven",
-      6 => "six",
-      5 => "five",
-      4 => "four",
-      3 => "three",
-      2 => "two",
-      1 => "one"
-    }
-    numbbas[num]
-  end
 end

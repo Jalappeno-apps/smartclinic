@@ -1,14 +1,22 @@
-h1 Doctors
-= form_with model: Doctor.new, url: dashboard_doctors_path, method: :post do |f|
-  = f.file_field :profile_picture
+h2.text-center = t("dashboard.doctors.all_doctors")
 
-  = f.label :name
-  = f.text_field :name
+- Doctor.all.each_with_index do |d, i| 
+  = i + 1
+  | . 
+  = link_to d.name, dashboard_doctor_path(d)
+  br
+hr
+
+/ = form_with model: Doctor.new, url: dashboard_doctors_path, method: :post do |f|
+/   = f.file_field :profile_picture
+
+/   = f.label :name
+/   = f.text_field :name
   
-  = f.label :booksy_url
-  = f.text_field :booksy_url
+/   = f.label :booksy_url
+/   = f.text_field :booksy_url
 
-  = f.label :lek_url
-  = f.text_field :lek_url
+/   = f.label :lek_url
+/   = f.text_field :lek_url
 
-  = f.submit
+/   = f.submit

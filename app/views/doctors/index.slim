@@ -11,12 +11,12 @@
         .col-md-3
           a href="#{doctor_path(doctor)}"
             .doctor_box
-              .doctor_image class=="#{numbers_to_words(index+1)}-overlay"
+              .doctor_image class=="#{doctor.color}-overlay"
                 .overlay 
                 = image_tag 'icons/white-arrow.svg', class: 'doctors-white-arrow'
                 = image_tag 'square.jpg', class: "img-thumbnail remove-border"
           - doctor.specializations.each do |sp|
-           span class=="spec-text #{numbers_to_words(index+1)}-text" = t("specializations.#{sp.name}").upcase
+           span class=="spec-text #{doctor.color}-text" = t("specializations.#{sp.name}").upcase
           .doctor-text = link_to doctor.name, doctor_path(doctor) 
           
-          p.doctor-description = doctor.description
+          p.doctor-description = truncate(doctor.description, length: 210)

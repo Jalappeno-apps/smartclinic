@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   root "homepage#index"
 
   devise_for :users, path: 'admin', path_names: { 
-  	sign_in: 'login',
-  	sign_out: 'logout'
+  	sign_in: 'login'
   }
 
   devise_scope :user do
@@ -15,8 +14,9 @@ Rails.application.routes.draw do
   resources :pricing, only: [:index]
   
   namespace :dashboard do
-    resources :doctors, only: [:index, :create, :show]
+    resources :doctors, only: [:index, :create, :show, :update]
     resources :blogs, only: :index
+    resources :pricing, only: :index
   end
 
   namespace :categories do 

@@ -887,60 +887,28 @@ li.pricing_box a:hover {
   line-height: 15px;
 }
 
-.one-overlay {
-  background: #DA7F4E;
+.orange-overlay {
+  background: map-get($smartlife, 'orange-10') !important;
 }
 
-.one-text {
-  color: #DA7F4E;
+.orange-text {
+  color: map-get($smartlife, 'orange-10') !important;
 }
 
-.two-overlay {
-  background: #ECCC5A;
+.yellow-overlay {
+  background: map-get($smartlife, 'yellow-100') !important;
 }
 
-.two-text {
-  color: #ECCC5A;
+.yellow-text {
+  color: map-get($smartlife, 'yellow-100') !important;
 }
 
-.three-overlay {
-  background: #AE1515;
+.red-overlay {
+  background: map-get($smartlife, 'red-100') !important;
 }
 
-.three-text {
-  color: #AE1515;
-}
-
-.four-overlay {
-  background: #DA7F4E;
-}
-
-.four-text {
-  color: #DA7F4E;
-}
-
-.five-overlay {
-  background: #ECCC5A;
-}
-
-.five-text {
-  color: #ECCC5A;
-}
-
-.six-overlay {
-  background: #AE1515;
-}
-
-.six-text {
-  color: #AE1515;
-}
-
-.seven-overlay {
-  background: #DA7F4E;
-}
-
-.seven-text {
-  color: #DA7F4E;
+.red-text {
+  color: map-get($smartlife, 'red-100') !important;
 }
 
 .doctors-white-arrow {

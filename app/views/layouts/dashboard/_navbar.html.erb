@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">SmartlifeClinic</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <%= link_to('Doctors', dashboard_doctors_path, method: :get, class: "nav-link") %>
+      </li>
+      <li class="nav-item">
+        <%= link_to('Pricing', dashboard_pricing_index_path, method: :get, class: "nav-link") %>
+
+      </li>
+  
+      <li class="nav-item">
+        <% if user_signed_in? %>
+          <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link text-danger") %>
+        <% end %>
+      </li>
+    </ul>
+    
+  </div>
+</nav>

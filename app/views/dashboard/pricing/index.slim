@@ -1,0 +1,10 @@
+h1.text-center All Prices
+hr
+
+/ = form_with Pricing.physical.map, url: pricing_index_path, method: :put do |e|
+/   .form-row
+/     .col-md-6
+/       p = t("pricing.physical.#{e.title}.title")
+/     .col-md-6
+/       = f.text_field :price
+/     =f.submit "Save"

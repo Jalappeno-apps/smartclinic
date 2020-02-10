@@ -1,6 +1,8 @@
 Pricing.all.destroy_all
 Doctor.all.destroy_all
+User.all.destroy_all
 
+User.create!(email: 'test@test.com', password: 'test123')
 #physical
 price_1 = Pricing.create!(
   title: "section_1",

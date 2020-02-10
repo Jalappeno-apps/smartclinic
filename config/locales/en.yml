@@ -132,5 +132,7 @@ en:
     mental: "Phsychological Health"
   dashboard: 
     title: "Dashboard"
+    doctors: 
+      all_doctors: "All doctors"
   homepage: 
     title: "Homepage"
