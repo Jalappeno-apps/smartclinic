@@ -1,8 +1,10 @@
 - if doctor
   h1 style="text-align: center" = doctor.name&.to_str&.capitalize
-
+  - if doctor.profile_picture.attached?
+    .text-center = image_tag doctor&.profile_picture&.variant(resize: '200x200')
   - if doctor.specializations.any?
   	b Specializations
   	ul
   	- doctor.specializations.each do |sp|
   	  li = sp.name
+

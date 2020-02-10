@@ -18,6 +18,7 @@ gem 'http_accept_language', "~> 2.1.1"
 gem "mini_magick"
 gem 'image_processing', '~> 1.2'
 gem 'aws-sdk-s3'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

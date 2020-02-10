@@ -14,7 +14,10 @@
               .doctor_image class=="#{doctor.color}-overlay"
                 .overlay 
                 = image_tag 'icons/white-arrow.svg', class: 'doctors-white-arrow'
-                = image_tag 'square.jpg', class: "img-thumbnail remove-border"
+                - if doctor.profile_picture.attached?
+                  .text-center = image_tag doctor&.profile_picture, class: "img-thumbnail remove-border"
+                - else
+                  = image_tag 'square.jpg', class: "img-thumbnail remove-border"
           - doctor.specializations.each do |sp|
            span class=="spec-text #{doctor.color}-text" = t("specializations.#{sp.name}").upcase
           .doctor-text = link_to doctor.name, doctor_path(doctor) 
