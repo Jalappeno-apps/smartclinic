@@ -1,0 +1,21 @@
+.container style="height: 100vh;"
+  h2.text-center style="margin-bottom: 36px; margin-top: 15%;" Admin Log in
+  
+  .row style="display: flex; justify-content: center"
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| 
+      .form-group
+        = f.label :email, style: "text-align: left !important"
+        br
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" 
+      br
+      .form-group
+        = f.label :password 
+        br
+        = f.password_field :password, autocomplete: "current-password", class: "form-control"
+      .form-check
+        br
+        - if devise_mapping.rememberable? 
+          = f.check_box :remember_me, class: "form-check-input"
+          = f.label :remember_me, class: "form-check-label"
+
+      = f.submit "Log in", class: "btn btn-primary"
