@@ -1,0 +1,127 @@
+#pricing {
+  margin-top: 5%;
+}
+
+.pricing_text {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  // color: #7E665B;
+}
+
+li.pricing_box a {
+  font-size: 16px;
+  text-decoration: none;
+  // color: #411F11;
+  font-weight: bold;
+}
+
+li.pricing_box {
+  margin-right: 20px;
+}
+
+li.pricing_box a:hover {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.pricing_box {
+  padding: 6px 24px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(152, 123, 108, 0.2);
+  border-radius: 8px;
+  a {
+    color: #411F11;
+  }
+}
+
+.pricing_box:hover {
+  background: #F1A378;
+  box-shadow: 0px 2px 10px #F1A47A;
+  border: 1px solid #F1A378;
+  a {
+    color: white;
+  }
+}
+.pricing_box:active {
+  background: #F1A378;
+  box-shadow: 0px 2px 10px #F1A47A;
+  border: 1px solid #F1A378;
+  a {
+    color: white;
+  }
+}
+
+.pricing_tabs {
+  margin-top: 5%;
+}
+
+.active_tab  {
+  background: #F1A378;
+  box-shadow: 0px 2px 10px #F1A47A;
+  border: 1px solid #F1A378;
+  a {
+    color: white;
+  }
+}
+
+/* ============ pricing end ============*/
+@media only screen and (max-width: 600px) {
+  .scroll {
+    white-space: nowrap; /* [1] */
+    overflow-x: auto; /* [2] */
+    -webkit-overflow-scrolling: touch; /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */ 
+  }
+  .nav {
+    flex-wrap: initial;
+  }
+
+  .justify-content-center {
+    justify-content: initial !important; 
+  }
+
+  .pricing_box {
+    margin-left: 15px !important;
+  }
+
+  ul.scroll li.pricing_box {
+    display:inline;
+    padding: initial;
+    // box-shadow: initial;
+    box-sizing: initial;
+    margin: initial;
+  }
+}
+
+.pricing_title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #251007;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 30px;
+  /* or 143% */
+  // display: flex;
+  align-items: center;
+  text-align: right;
+  
+  color: #251007;
+}
+
+@media only screen and (max-width: 600px) {
+  .price {
+    text-align: center;
+  }
+}
+
+.orange {
+  border: 0.7px solid #F1A378;
+  box-sizing: border-box;
+}
