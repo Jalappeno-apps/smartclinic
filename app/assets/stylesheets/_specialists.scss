@@ -46,8 +46,8 @@
 .doctor_image img {
   opacity: 0.3;
   display: block;
-  // width: 100%;
   height: auto;
+  max-height: 270px;
   transition: .5s ease;
   backface-visibility: hidden;
   margin-bottom: 18px;
