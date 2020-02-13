@@ -1,3 +1,3 @@
-class Categories::MentalHealthController < ApplicationController
+class Categories::MentalHealthController < Categories::ApplicationController
   def index; end
 end

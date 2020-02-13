@@ -1,3 +1,3 @@
-class Categories::SexualHealthController < ApplicationController
+class Categories::SexualHealthController < Categories::ApplicationController
   def index; end
 end

@@ -1,3 +1,3 @@
-class Categories::PhysicalHealthController < ApplicationController
+class Categories::PhysicalHealthController < Categories::ApplicationController
   def index; end
 end

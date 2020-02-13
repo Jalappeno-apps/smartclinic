@@ -1,6 +1,9 @@
 {
   "name": "smartlifeclinic",
   "private": true,
+  "scripts": {
+    "build": "webpack --watch --config config/webpack/development.js --colors --display-error-details"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
     "@rails/actioncable": "^6.0.0-alpha",
