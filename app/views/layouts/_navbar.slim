@@ -11,15 +11,14 @@ nav.navbar.navbar-expand-lg.navbar-light
           = link_to t('navbar.sex_health'), categories_sexual_health_index_path, class: 'nav-link'
 
         li.nav-item
-          a.nav-link href="#" 
-            = t('navbar.mental_health')
+          = link_to t('navbar.mental_health'), categories_mental_health_index_path, class: 'nav-link'
 
         li.nav-item
-          a.nav-link href="#" 
-            = t('navbar.physical_health')
+          = link_to t('navbar.physical_health'), categories_physical_health_index_path, class: 'nav-link'
 
         li.nav-item
           = link_to t('navbar.specialists'), doctors_path, class: 'nav-link'
+
         li.nav-item
           = link_to t('navbar.pricing'), pricing_index_path, class: 'nav-link'
 
