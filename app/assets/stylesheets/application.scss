@@ -1,5 +1,11 @@
 @import 'bootstrap';
+
 @import 'navbar';
+@import 'colors';
+@import 'buttons';
+@import 'text';
+@import 'pricing';
+@import 'specialists';
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -14,4 +20,637 @@ body {
   .container {
     max-width: 1200px !important;
   }
+}
+
+/* ============== Header ================== */
+header {
+
+  /* Center and scale the image nicely */
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main {
+  padding-top: 50px;
+}
+
+.header-heading {
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-heading {
+    margin-bottom: 24px;
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-button {
+    text-align: center;
+  }
+
+  .header-heading {
+    font-size: 1.8rem;
+    text-align: left !important;
+    margin-top: 0px;
+  }
+
+  .main-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+  }
+}
+
+.header-images {
+  padding: 0px !important;
+  min-height: 467px;
+  background-image: image-url("home_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-button {
+  float: left;
+}
+
+#header-mid {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+#header-mid-text {
+  color: #251007;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-heading {
+    text-align: center;
+  }
+
+  #header-mid {
+    padding: 0px;
+  }
+
+  .header-button {
+    float: initial !important;
+    margin-bottom: 30px;
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
+  .header-images {
+    min-height: 340px;
+    background-image: image-url("../images/header_mobile_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+
+  #header-mid-text {
+    margin-top: 0px;
+  }
+}
+
+.main-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+}
+
+.text {
+  color: #7E665B;
+  line-height: 30px;
+}
+
+
+#header-text {
+  text-align: left !important;
+  color: #7E665B;
+  line-height: 30px;
+}
+
+#header-text-2 {
+  color: #7E665B;
+  line-height: 30px;
+}
+
+/* ============ Header ends =============== */
+
+/* ============== Services ================ */
+#services {
+  margin-top: 150px;
+}
+
+#services h3 {
+  font-size: 21px;
+  margin-top: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+  #services {
+    margin-top: 50px;
+  }
+  .bold-font {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #services {
+    margin-top: 20px;
+  }
+
+  .service-img {
+    margin-bottom: 45px;
+  }
+}
+
+/* ============ Services end ============*/
+
+/* =========== columns section =========*/
+#sexual {
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 500px) {
+  #sexual {
+    margin-top: 20%;
+  }
+
+  #services {
+    margin-top: 20px;
+  }
+}
+
+ul.points-red {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.points-red li {
+  list-style-position: inside;
+  padding: 0px 0 10px 0px;
+  text-indent: -2em;
+}
+
+.points-red li:before {
+  content:''; 
+  display:inline-block; 
+  height:1em; 
+  width:1em; 
+  background-image:image-url('../images/icons/arrow-red.svg'); 
+  background-size:contain; 
+  background-repeat:no-repeat; 
+  padding-left: 2em; 
+}
+
+.image-overlay-wrapper {
+  margin-top: -30px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .overlay-red-logo {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .overlay-red-logo {
+    width: 80px;
+    left: inherit;
+    right: 0px;
+    top: inherit;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .overlay-red-logo {
+    width: inherit;
+    position: relative;
+    left: 18vh;
+    top: -6vh;
+  }
+}
+
+/* ============ columns end ============*/
+
+/* ============ psychology ================ */
+#psychology {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+ul.points-blue {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.points-blue li {
+  list-style-position: inside;
+  padding: 0px 0 10px 0px;
+  text-indent: -2em;
+}
+
+.points-blue li:before {
+  content:''; 
+  display:inline-block; 
+  height:1em; 
+  width:1em; 
+  background-image:image-url('../images/icons/arrow-blue.svg'); 
+  background-size:contain; 
+  background-repeat:no-repeat; 
+  padding-left: 2em; 
+}
+
+.overlay-image, .overlay-blue-logo {
+  grid-column:1; /* first-column */
+  grid-row:1; /* first row */
+}
+
+@media only screen and (max-width: 700px) {
+  #psychology {
+    margin-top: 20%;
+  }
+
+  .overlay-blue-logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .overlay-blue-logo {
+    width: 80px;
+    left: inherit;
+    bottom: inherit;
+    top: inherit;
+    right: inherit;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .overlay-blue-logo {
+    position: relative;
+    width: inherit;
+    right: -10vh;
+    top: -5vh;
+  }
+}
+
+
+/* ============ psychology ends ============*/
+
+/* ============ physical begins ============*/
+
+#physical {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  #physical {
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+}
+/* ============ physical ends ============*/
+
+ul.points-orange {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.points-orange li {
+  list-style-position: inside;
+  padding: 0px 0 10px 0px;
+  text-indent: -2em;
+}
+
+.points-orange li:before {
+  content:''; 
+  display:inline-block; 
+  height:1em; 
+  width:1em; 
+  background-image: image-url('../images/icons/arrow-orange.svg'); 
+  background-size:contain; 
+  background-repeat:no-repeat; 
+  padding-left: 2em; 
+}
+
+#boxes {
+  margin-top: 10%;
+}
+
+.box {
+  max-width: 260px;
+  min-height: 240px;
+  background: gray;
+  margin-bottom: 45px;
+
+  padding: 20px;
+  display: grid; 
+  grid-auto-rows: minmax(100px, auto);
+  position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  .image-sections {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+  }
+
+  .outerbox {
+    border: 1px solid black;
+    margin: 7px 30px;
+    padding: 20px;
+  }
+
+  .box {
+    max-width: 100%;
+    height: 95%;
+    background: gray;
+    margin-bottom: 45px !important;
+
+    padding: 25px;
+    display: grid; 
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box {
+    max-width: 100%;
+    height: 90%;
+    background: gray;
+    margin-bottom: 45px !important;
+
+    padding: 10px;
+    display: grid; 
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
+  }
+}
+
+.box-content-red {
+  border-top: 3.57697px solid #BA2020;
+  padding-top: 36px;
+  grid-row: 1;
+}
+
+.box-content-yellow {
+  border-top: 3.57697px solid #ECCC5A;
+  padding-top: 36px;
+  grid-row: 1;
+}
+
+.box-content-orange {
+  border-top: 3.57697px solid #E77538;
+  padding-top: 36px;
+  grid-row: 1;
+}
+
+.second-part {
+  grid-row: 1;
+}
+
+.white-arrow {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+}
+
+.box-text {
+  color: #251007;
+  font-weight: 500;
+  font-size: 21.1408px;
+  line-height: 34px;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-text {
+    color: #251007;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: inherit;
+  }
+}
+
+.box-red {
+  background-color: #F3C8C8;
+}
+
+.box-yellow {
+  background-color: #FFF5D2;
+}
+
+.box-orange {
+  background-color: #FED7C4;
+}
+
+footer {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+
+  // margin-top: 5%;
+  min-height: 500px;
+  min-width: 100vh;
+  background-color: #F9F6F4;
+  padding: 85px;
+
+  bottom: 0;
+}
+.m-left50 {
+  margin-left: 10px;
+}
+
+#footer-logo {
+  min-width: 320px;
+  margin-bottom: 50px; 
+}
+
+.footer-points {
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #251007;
+}
+
+.footer-points h4 {
+  font-weight: bold;
+  
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: #251007;
+  font-size: 16px;
+  line-height: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    left: initial;
+    margin-left: initial;
+    margin-right: initial;
+    max-width: initial;
+    position: initial;
+    right: initial;
+    width: initial;
+    min-width: initial;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+  }
+
+  #footer-logo {
+    margin-top: 30px;
+    min-width: 280px !important;
+  }
+}
+
+.underline {
+  border-bottom: 2px solid #251007;
+}
+
+.cardy {
+  -webkit-transition: 500ms ease-in-out;
+  -moz-transition: 500ms ease-in-out;
+  -o-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+.cardy:hover {
+  -webkit-transform: translate(0px, -15px);
+  -moz-transform: translate(0px, -15px);
+  -o-transform: translate(0px, -15px);
+  -ms-transform: translate(0px, -15px);
+  transform: translate(0px, -15px);
+} 
+
+@media only screen and (max-width: 768px) {
+  .box {
+    min-height: 170px;
+  }
+
+  #header-mid-text {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-muted {
+    text-align: center;
+  }
+  
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: initial !important; 
+  }
+
+  .box {
+    min-height: 201px;
+    margin: auto !important;
+  }
+
+  .cardy {
+    display: inline-block;
+    max-height: 190px !important;
+
+    min-width:80vw;
+  } 
+
+  .flex-reverse-order-it {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.service-img {
+  -webkit-transition: 200ms ease-in-out;
+  -moz-transition: 200ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.service-img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+} 
+@media only screen and (max-width: 600px) {
+  .m-25-top {
+    margin-top: 25px;
+  }
+}
+
+ul li {
+  color: #7E665B;
+}
+
+#services_second {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.service_heading {
+  margin-bottom: 5%;
+
+}
+
+@media only screen and (max-width: 600px) {
+  #services_second {
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+}
+
+#services_second h3 {
+  font-size: 21px;
+  margin-top: 48px;
+}
+
+// =============== sexual health category page ===========
+
+#sexual-health-page {
+  background: linear-gradient(180deg, #FFC3A3 0%, #FFFBF9 15.1%, #FFFBF9 78.57%);
+  padding-top: 10%;
+}
+
+.sexual-health-heading {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.sexual-health-text {
+  margin-top: 36px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #7E665B;
+}
+
+#sexual-health-breaker {
+  margin-top: 5%;
 }

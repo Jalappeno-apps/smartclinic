@@ -40,3 +40,4 @@ if (width > 600) {
   for (var i = animated_elements.length - 1; i >= 0; i--) 
     animated_elements[i].removeAttribute("id");
 }
+

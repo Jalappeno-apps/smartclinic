@@ -1,3 +1,26 @@
+@import 'bootstrap';
+
+@import 'navbar';
+@import 'colors';
+@import 'buttons';
+@import 'text';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #F4E7DF 0%, #FFFFFF 29.54%, #FFFFFF 100%);
+  overflow-x: hidden;
+}
+
+@media (min-width: 1200px) {
+  .container-xl  {
+    max-width: 2500px !important;
+  }
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+
 #pricing {
   margin-top: 5%;
 }

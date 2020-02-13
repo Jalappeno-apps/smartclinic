@@ -1,1 +1,1 @@
-import '../../assets/stylesheets/_specialists.scss';
+import '../../assets/stylesheets/specialists.scss';
